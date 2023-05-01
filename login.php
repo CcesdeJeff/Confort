@@ -87,33 +87,53 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
             padding: 0%;
             box-sizing: border-box;
             font-family: 'Roboto Condensed', sans-serif;
-            text-decoration: none;  
-        }
-        .logo img{
-            width: 100px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .todo{
-            border: 1px solid white;
-            padding: 10px;
-            text-align: center;
+            text-decoration: none;
+            background-color: white;
+            color: black;
         }
         .contenedor{
-            width: 350px;
-            padding: 20px;
-            align-items: center;
-            color: white;
-            
+            position: relative;
+	        width: 50%;
+	        height: 100%;
+	        justify-content: center;
+	        align-items: center;
+	        padding: 20px 100px;
+	        left: 300px;         
         }
-        body{
-            background-color: black;
+        .logo img{
+            width: 150px;
+            position: relative;
+            left: 33%;
+        }
+        h2,p{
+	    position: relative;
+	    padding: 10px 0px 10px;
+	    margin-bottom: 10px;
+	    text-align: center;
+        }
+        form{
+        text-align: center;
+        padding: 15px;
+        border: 1px solid black;
+        border-radius: 25px;
+        }
+
+        form:hover{
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5) ;
+            transition: all 300ms ease;
+        }
+        .form-group{
+            padding: 15px;
         }
         .btn{
-            background-color: white;
-            padding: 10px;
-            
+            background-color: black;
+            color: white;
+        }
+        .btn:hover{
+            transform: scale(1.1);
+            background-color: #FDC128;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5) ;
+            transition: all 300ms ease;
         }
     </style>
 </head>
@@ -124,7 +144,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
         </div>
         <h2>Bienvenido</h2>
         <p>
-            Por favor ingresar sus datos para iniciar sesion
+            Por favor ingresar tus datos para iniciar sesion
         </p>
         <form action="" method="post" class="todo">
         <!--- este renglon siguiente es para validar que no tenga ningun error el nombre de usuario  -->
@@ -141,14 +161,9 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
             <input type="password" name="clave" class="form-control" value=" <?php echo $password; ?> ">
             <span class="help-block"><?php echo $password_err; ?> </span>
             <div class="form-group">
-                <input type="submit" value="ingresar" class=" btn">
+                <input type="submit" value="Ingresar" class=" btn">
             </div>
         </div>
-        </form>
-        <p> ¿No tienes cuenta? <a href="registro.php">Registrate aquí</a></p>
-
-    </div>
-
-    
+    </div>    
 </body>
 </html>
