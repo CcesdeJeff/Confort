@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú lateral responsive - MagtimusPro</title>
+
+    <link rel="stylesheet" href="../php/css/estilosregistro.css">
+
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+</head>
+<body id="body">
+    
+    <header>
+        <div class="icon__menu">
+            <i class="fas fa-bars" id="btn_open"></i>
+        </div>
+    </header>
+
+    <div class="menu__side" id="menu_side">
+
+        <div class="name__page">
+            <img src="Img/Logo Inmo.png" alt="">
+            <h4>Confort</h4>
+        </div>
+
+        <div class="options__menu">	
+
+            <a href="welcome.php" class="selected">
+                <div class="option">
+                    <i class="fas fa-home" title="Inicio"></i>
+                    <h4>Inicio</h4>
+                </div>
+            </a>
+
+            <a href="registro.html">
+                <div class="option">
+                    <i class="far fa-file" title="Portafolio"></i>
+                    <h4>Registro</h4>
+                </div>
+            </a>
+            
+            <a href="actualizar.html">
+                <div class="option">
+                    <i class="fas fa-video" title="Cursos"></i>
+                    <h4>Actualizar</h4>
+                </div>
+            </a>
+
+            <a href="eliminar.html">
+                <div class="option">
+                    <i class="far fa-sticky-note" title="Blog"></i>
+                    <h4>Eliminar</h4>
+                </div>
+            </a>
+
+            <a href="../php/loginMayor.html">
+                <div class="option">
+                    <i class="far fa-id-badge" title="Contacto"></i>
+                    <h4>Usuario</h4>
+                </div>
+            </a>
+            <a href="../php/cerrarsesion.php">
+                <div class="option">
+                    <i class="far fa-address-card" title="Nosotros"></i>
+                    <h4>Cerrar sesión</h4>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+    <form>
+        <div class="container">
+            <div>
+                <div>
+                    <h2>Registro</h2>
+
+                    <input type="text" class="btnC" placeholder="Código de apartamento">
+                    <select name="" id="" class="btnC colorP" >
+                        <option value="" class="colorP">Tipo de apartamento</option>
+                        <option value="" class="colorP">Apartamento</option>
+                        <option value="" class="colorP">Casa</option>
+                        <option value="" class="colorP">Apartaestudio</option>
+                    </select>
+                    <select name="" id="" class="btnC">
+                        <option value="" class="colorP">Cuidad</option>
+                        <option value="" class="colorP">Medellín</option>
+                        <option value="" class="colorP">Bello</option>
+                        <option value="" class="colorP">Itagüi</option>
+                        <option value="" class="colorP">Envigado</option>
+                    </select>
+                    <select name="" id="" class="btnC">
+                        <option value="" class="colorP">0</option>
+                        <option value="" class="colorP">1</option>
+                        <option value="" class="colorP">2</option>
+                        <option value="" class="colorP">3</option>
+                        <option value="" class="colorP">4</option>
+                    </select>
+                    <input type="number" class="btnC" placeholder="Precio">
+                    <input type="number" class="btnC" placeholder="Habitaciones">
+                    <input type="number" class="btnC" placeholder="Baños">
+                    <input type="number" class="btnC" placeholder="Tamaño">
+                    <textarea placeholder="Datos del lugar" class="btnC"></textarea>
+                    <input type="file" name="" id="" class="btnC">
+                    <button class="cta">
+                        <span>Registrar</span>
+                        <svg viewBox="0 0 13 10" height="10px" width="15px">
+                          <path d="M1,5 L11,5"></path>
+                          <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                      </button>
+                </div>
+            </div>
+        </div>  
+    </form>
+    <script src="../js/script.js"></script>
+</body>
+</html>

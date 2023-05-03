@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú lateral responsive - MagtimusPro</title>
+
+    <link rel="stylesheet" href="../php/css/estilosactualizar.css">
+
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+</head>
+<body id="body">
+    
+    <header>
+        <div class="icon__menu">
+            <i class="fas fa-bars" id="btn_open"></i>
+        </div>
+    </header>
+
+    <div class="menu__side" id="menu_side">
+
+        <div class="name__page">
+            <img src="Img/Logo Inmo.png" alt="">
+            <h4>Confort</h4>
+        </div>
+
+        <div class="options__menu">	
+
+            <a href="welcome.php" class="selected">
+                <div class="option">
+                    <i class="fas fa-home" title="Inicio"></i>
+                    <h4>Inicio</h4>
+                </div>
+            </a>
+
+            <a href="registro.html">
+                <div class="option">
+                    <i class="far fa-file" title="Registro"></i>
+                    <h4>Registro</h4>
+                </div>
+            </a>
+            
+            <a href="actualizar.html">
+                <div class="option">
+                    <i class="fas fa-video" title="Actualizar"></i>
+                    <h4>Actualizar</h4>
+                </div>
+            </a>
+
+            <a href="eliminar.html">
+                <div class="option">
+                    <i class="far fa-sticky-note" title="Eliminar"></i>
+                    <h4>Eliminar</h4>
+                </div>
+            </a>
+
+            <a href="../php/loginMayor.html">
+                <div class="option">
+                    <i class="far fa-id-badge" title="Usuario"></i>
+                    <h4>Usuario</h4>
+                </div>
+            </a>
+            <a href="../php/cerrarsesion.php">
+                <div class="option">
+                    <i class="far fa-address-card" title="Cerrar sesión"></i>
+                    <h4>Cerrar sesión</h4>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+    <form>
+        <h2>Actualizar</h2>
+        <div class="container">
+            <div>
+                <input type="text" class="btnC" placeholder="Código de apartamento">
+                <button class="cta">
+                <span>Consultar</span>
+                <svg viewBox="0 0 13 10" height="10px" width="15px">
+                  <path d="M1,5 L11,5"></path>
+                  <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+                </button>
+            </div>
+        </div>
+    </form>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
