@@ -233,10 +233,11 @@ nav ul li ul a:hover{
   
   .contact-image img {
     display: block;
-    width: 100%;
+    width: 60%;
     max-width: 400px;
     height: auto;
     border: 5px solid #FDC128;
+    padding-left: 15px;
   }
   .linksventas:hover{
     color: #000000;
@@ -251,42 +252,48 @@ nav ul li ul a:hover{
     color: #FDC128;
     text-align: center;
     background-color: #ffffff;
-  }
-  
-  .letra {
+}
+
+.letra {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 18px;
     text-align: center;
     color: #000000;
-  }
-  
-  .containerform {
+}
+
+.containerform {
     position: relative;
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .formulario {
+    background-color: #FDC128;
+}
+
+.formulario {
     position: relative;
-    height: 500px;
+    height: auto;
     width: 50%;
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  
-  .campos {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.campos {
     display: flex;
     flex-direction: column;
     gap: 22px;
-  }
-  
-  .ingreso {
+    width: 100%;
+    max-width: 500px;
+}
+
+.ingreso {
     width: 100%;
     border: 2px solid rgba(0, 0, 0, 0);
     outline: none;
@@ -294,19 +301,19 @@ nav ul li ul a:hover{
     padding: 0.5rem 1rem;
     font-size: 1.1rem;
     transition: .3s;
-  }
-  
-  .ingreso:hover {
+}
+
+.ingreso:hover {
     background-color: rgba(22, 24, 7, 0.212);
-  }
-  
-  .ingreso:active {
+}
+
+.ingreso:active {
     background-color: rgba(22, 24, 7, 0.212);
     border-color: #FDC128;
     transition: background-color 0.3s ease-in-out;
-  }
-  
-  .botonenvio {
+}
+
+.botonenvio {
     width: 100%;
     padding: 0.5rem 1rem;
     background-color: #000000;
@@ -314,19 +321,12 @@ nav ul li ul a:hover{
     font-size: 1.1rem;
     border: none;
     outline: none;
-  }
-  
-  .botonenvio:hover {
+    cursor: pointer;
+}
+
+.botonenvio:hover {
     transform: scale(1.1);
     background-color: #FDC128;
-    transition: all 300ms ease;
-    cursor: pointer;
-  }
-  
-  @media only screen and (max-width: 768px) {
-    .formulario {
-      width: 80%;
-    }
   }
 
 
