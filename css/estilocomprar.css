@@ -374,79 +374,82 @@ textarea{
 
 /*FOOTER*/
 
-footer{
+footer {
     width: 100%;
-    padding: 1px 100px;
+    padding: 1px 0px;
     background-image: url(Images/);
     background-size: cover;
-    
+    margin-left: 0;
     background-color: #FDC128;
     -webkit-mask-image: url("Images/background-footer.svg");
     mask-image: url("../Images/background-footer.svg");
     -webkit-mask-size: cover;
     mask-size: cover;
+    position: relative;
+    bottom: 0;
 }
 
-.container__footer{
+.container__footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 1200px;
     margin: auto;
     margin-top: 100px;
+    width: 100%;
 }
 
-.box__footer{
+.box__footer {
     display: flex;
     flex-direction: column;
-    padding: 1px;
+    padding: 40px;
 }
 
-.box__footer .logo img{
+.box__footer .logo img {
     width: 180px;
 }
 
-.box__footer .terms{
-    max-width: 300px;
-    margin-top: 1px;
-    font-weight: 400;
+.box__footer .terms {
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500;
     color: #030303;
     font-size: 18px;
 }
 
-.box__footer h2{
+.box__footer h2 {
     margin-bottom: 30px;
     color: #343434;
     font-weight: 700;
 }
 
-.box__footer a{
+.box__footer a {
     margin-top: 10px;
     color: #080808;
     font-weight: 600;
 }
 
-.box__footer a:hover{
+.box__footer a:hover {
     opacity: 0.8;
 }
 
-.box__footer a .fab{
-    font-size: 18px;
+.box__footer a .fab {
+    font-size: 20px;
 }
 
-.box__copyright{
+.box__copyright {
     max-width: 1200px;
     margin: auto;
     text-align: center;
     padding: 0px 40px;
 }
 
-.box__copyright p{
+.box__copyright p {
     margin-top: 20px;
     color: #7a7a7a;
 }
 
-.box__copyright hr{
+.box__copyright hr {
     border: none;
     height: 1px;
     background-color: #7a7a7a;

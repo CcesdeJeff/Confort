@@ -488,3 +488,23 @@ label > span {
     width: 100%;
 
 }
+
+#imagen {
+    width: 350px;
+    height: 250px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 1px 10px 25px rgba(0,0,0.5);
+}
+
+#imagen img{
+    width: 500px;
+    height: 100%;
+    border-radius: 10px;
+    transition: 2s;
+}
+
+#imagen img:hover {
+    transform: translateX(-30%);
+    filter: brightness(80%);
+}
