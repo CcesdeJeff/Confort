@@ -158,7 +158,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
             <!-- en este renglon se hace el input de la contraseña y se le ingrsa directamente en los div el codigo php llamando las variables que necesitamos -->
             <div class = "form-group" <?php  echo  (!empty ($password_err)) ? 'has-error': ''; ?>>
             <label for="">Contraseña</label>
-            <input type="password" name="clave" class="form-control" value=" <?php echo $password; ?> ">
+            <input type="password" name="clave" class="form-control" value="<?php echo $password; ?>">
             <span class="help-block"><?php echo $password_err; ?> </span>
             <div class="form-group">
                 <input type="submit" value="Ingresar" class=" btn">
