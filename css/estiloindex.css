@@ -178,61 +178,82 @@ nav ul li ul a:hover{
     }  
 }
 /*Carrusel img*/
-main{
+main {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 80px;
-}
-.container-all{
+  }
+  
+  .container-all {
     max-width: 100%;
     width: 100%;
     height: 100%;
     border-radius: 6px;
-    display:inline-block;
+    display: inline-block;
     align-items: center;
     justify-content: center;
-}
-.slide{
+  }
+  
+  .slide {
     display: flex;
-    transform: translate3d(0,0,0);
+    transform: translate3d(0, 0, 0);
     transition: all 600ms ease;
     animation-name: autoplay;
     animation-duration: 15s;
     animation-direction: alternate;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
-}
-.item-slide{
+  }
+  
+  .item-slide {
     position: relative;
     display: flex;
     flex-direction: column;
     flex-shrink: 0;
     flex-grow: 0;
     max-width: 100%;
-}
-@keyframes autoplay{
-    33%{
-        transform: translate3d(calc(-100% * 0),0,0);
+  }
+  
+  @keyframes autoplay {
+    33% {
+      transform: translate3d(calc(-100% * 0), 0, 0);
     }
-    66%{
-        transform: translate3d(calc(-100% * 1),0,0);
+    66% {
+      transform: translate3d(calc(-100% * 1), 0, 0);
     }
-    100%{
-        transform: translate3d(calc(-100% * 2),0,0);
+    100% {
+      transform: translate3d(calc(-100% * 2), 0, 0);
     }
-}
+  }
+  
+  /* Responsivo */
+  @media screen and (max-width: 768px) {
+    main {
+      padding: 40px;
+    }
+  
+    .container-all {
+      border-radius: 4px;
+    }
+  
+    .slide {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
 /*Botónes*/
 .btn1{
-    margin-right: 50px;
-    padding: 20px 30px;
+    margin-right: 5%;
+    padding: 2.5% 5%;
     background-color:  #0a0a0a;
     color: #fcfcfc;
     border-radius: 5px;
     position: relative;
-    left: 100px;
+    left: 10%;
     bottom: 20px;
-    font-size: 18px;
+    font-size: 1.5vw;
 }
 .btn1:hover{
     background-color: white;
@@ -240,18 +261,18 @@ main{
     transition: 600ms linear; 
     transform: scale(1.1);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-    font-size: 22px;
+    font-size: 1.8vw;
 }
 .btn2{
-    margin-right: 50px;
-    padding: 20px 30px;
+    margin-right: 5%;
+    padding: 2.5% 5%;
     background-color:  #FDC128;
     color: #000000;
     border-radius: 5px;
     position: relative;
-    left: 46px;
+    left: 3%;
     bottom: 20px;
-    font-size: 18px;
+    font-size: 1.5vw;
 }
 .btn2:hover{
     background-color: #faf9f8;
@@ -259,18 +280,18 @@ main{
     transition: 600ms linear;
     transform: scale(1.1);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-    font-size: 22px;
+    font-size: 1.8vw;
 }
 .btn3{
-    margin-right: 50px;
-    padding: 20px 30px;
+    margin-right: 5%;
+    padding: 2.5% 5%;
     background-color:  #000000;
     color: #fdfdfd;
     border-radius: 5px;
     position: relative;
-    right: 8px;
+    right: 1%;
     bottom: 20px;
-    font-size: 18px;
+    font-size: 1.5vw;
 }
 .btn3:hover{
     background-color: white;
@@ -278,15 +299,16 @@ main{
     transition: 600ms linear;
     transform: scale(1.1);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-    font-size: 22px;
+    font-size: 1.8vw;
 }
+
 /*Relleno*/
 .icono__building{
     text-align: center;
 }
 .icono__building img{
-    width: 100px;
-    margin-top: 60px;
+    width: 10vw;
+    margin-top: 5vh;
 }
 .h1:hover{
     color: #FDC128;
@@ -300,19 +322,19 @@ main{
 }
 .sedes{
     width: 95%;
-    padding: 20px;
+    padding: 2.5%;
     display: flex;
-    margin: 50px;
+    margin: 5%;
     cursor: pointer;
 }
 .Images img{
-    width: 200px;
-    height: 300px;
+    width: 20vw;
+    height: 30vh;
     
 }
 .Images{
-    height: 400px;
-    padding: 10px;
+    height: 40vh;
+    padding: 1%;
     flex: 1;
     transition: all 600ms ease;
     align-items: center;
@@ -323,8 +345,8 @@ main{
     flex: 4;
 }
 .Images img:hover{
-    width: 250px;
-    height: 350px;
+    width: 25vw;
+    height: 35vh;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
     opacity: 0.5;
 }
@@ -332,18 +354,23 @@ main{
     visibility: visible;
     opacity: 1;
 }
+
 /*Banner*/
 .aliados{
-    width: 100%;
-    padding: 20px;
+    width: 95%;
+    padding: 2.5%;
     display: flex;
-    margin: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5%;
 }
+
 .aliados img{
-    width: 130px;
-    margin-right: 70px;
-    margin-left: 50px;
+    width: 15vw;
+    max-width: 130px;
+    margin: 0 2.5vw 2.5vw 2.5vw;
 }
+
 
 /*FOOTER*/
 
