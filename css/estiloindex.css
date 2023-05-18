@@ -377,7 +377,7 @@ main {
 footer{
     width: 100%;
     padding: 1px 100px;
-    background-image: url("Images/LogoInmo.png");
+    *background-image: url("Images/LogoInmo.png");
     background-size: cover;
     
     background-color: #FDC128;
