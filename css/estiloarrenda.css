@@ -305,6 +305,15 @@ section img:hover{
     align-items: center;
     padding-bottom: 150px;
 }
+@media screen and (max-width: 631px){
+    section{
+       width: 300px;
+       height: 100px;
+    }
+    .btn12{
+        width: 10px;
+    }
+}
   
 /*Contactanos*/
 
