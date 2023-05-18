@@ -177,9 +177,10 @@ nav ul li ul a:hover{
     }  
 }
 /*CONTACTO main*/
-.Imagenprincicontac:hover{
+.Imagenprincicontac:hover {
     transform: scale(1.1);
   }
+  
   body {
     color: #fff;
     font-family: Arial, sans-serif;
@@ -189,14 +190,15 @@ nav ul li ul a:hover{
   
   .Tituloinicial {
     color: #FDC128;
-    font-size: 28px;
+    font-size: 4vw;
     text-align: center;
     padding: 10px;
     text-align: left;
     color: black;
-    background: linear-gradient(90deg, rgb(253, 193, 40),rgb(22, 21, 22));
+    background: linear-gradient(90deg, rgb(253, 193, 40), rgb(22, 21, 22));
   }
-  .Tituloinicial:hover{
+  
+  .Tituloinicial:hover {
     color: #fff;
   }
   
@@ -204,7 +206,7 @@ nav ul li ul a:hover{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 5%;
     text-align: center;
   }
   
@@ -212,8 +214,7 @@ nav ul li ul a:hover{
     margin: 20px;
     padding: 20px;
     border: 1px solid #FDC128;
-    background: linear-gradient(90deg, rgb(253, 193, 40),rgb(22, 21, 22));
-    
+    background: linear-gradient(90deg, rgb(253, 193, 40), rgb(22, 21, 22));
   }
   
   .contact-info h2 {
@@ -227,7 +228,7 @@ nav ul li ul a:hover{
   }
   
   .contact-image {
-    flex-basis: 400px;
+    flex-basis: 100%;
     margin: 20px;
   }
   
@@ -239,11 +240,13 @@ nav ul li ul a:hover{
     border: 5px solid #FDC128;
     padding-left: 15px;
   }
-  .linksventas:hover{
+  
+  .linksventas:hover {
     color: #000000;
-    background-color:#FDC128 ;
-    font-size: 26px;
-}
+    background-color: #FDC128;
+    font-size: 2.6vw;
+  }
+  
 
   /*FORMULARIO*/
   .textoTituloDos {
