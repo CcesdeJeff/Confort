@@ -180,9 +180,10 @@ nav ul li ul a:hover{
 
 
 /* Main*/
-.Imagenprincicontac:hover{
+.Imagenprincicontac:hover {
     transform: scale(1.1);
   }
+  
   body {
     color: #fff;
     font-family: Arial, sans-serif;
@@ -192,26 +193,26 @@ nav ul li ul a:hover{
   
   .Tituloinicial {
     color: #FDC128;
-    font-size: 28px;
+    font-size: 4vw;
     text-align: center;
     padding: 10px;
     text-align: left;
     color: black;
-    background: linear-gradient(90deg, rgb(253, 193, 40),rgb(22, 21, 22));
+    background: linear-gradient(90deg, rgb(253, 193, 40), rgb(22, 21, 22));
   }
   
   .contact-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 5%;
     text-align: center;
   }
   
-  .box__article{
+  .box__article {
     transform: scale(1.1);
     background-color: #FDC128;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5) ;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
     transition: all 300ms ease;
   }
   
@@ -219,8 +220,7 @@ nav ul li ul a:hover{
     margin: 20px;
     padding: 20px;
     border: 1px solid #FDC128;
-    background: linear-gradient(90deg, rgb(253, 193, 40),rgb(22, 21, 22));
-    
+    background: linear-gradient(90deg, rgb(253, 193, 40), rgb(22, 21, 22));
   }
   
   .contact-info h2 {
@@ -234,7 +234,7 @@ nav ul li ul a:hover{
   }
   
   .contact-image {
-    flex-basis: 400px;
+    flex-basis: 100%;
     margin: 20px;
   }
   
@@ -245,83 +245,90 @@ nav ul li ul a:hover{
     height: auto;
     border: 5px solid #FDC128;
   }
-
-.Mensaj{
-    margin-top: 100px;
+  
+  .Mensaj {
+    margin-top: 10%;
     background-color: #ffd700;
     font-size: 30px;
     color: #000;
-}
-.Imagenprinci{
-    margin-top: 150px;
-    margin-left: 400px;
-    height: 300px;
-    width: 550px;
+  }
+  
+  .Imagenprinci {
+    margin-top: 15%;
+    margin-left: 10%;
+    width: 90%;
+    height: auto;
     border-radius: 20px;
-    
-}
-.textoTitulo{
+  }
+  
+  .textoTitulo {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 25px;
+    font-size: 2.5vw;
     color: #838383;
-    text-align: center  ;
-}
-.textoTituloDos{
+    text-align: center;
+  }
+  
+  .textoTituloDos {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 30px;
+    font-size: 3vw;
     color: #FDC128;
-    text-align: center  ;
+    text-align: center;
     background-color: #ffffff;
-}
-.Texto{
+  }
+  
+  .Texto {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 18px;
-    text-align: center  ;
+    font-size: 1.5vw;
+    text-align: center;
     color: #ffffff;
-}
-.Textodos{
+  }
+  
+  .Textodos {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 18px;
-    text-align: center  ;
+    font-size: 1.5vw;
+    text-align: center;
     color: #838383;
-}
-.linksventas{
+  }
+  
+  .linksventas {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 25px;
+    font-size: 2.5vw;
     color: #FDC128;
-    text-align: center  ;
-}
-.linksventas:hover{
+    text-align: center;
+  }
+  
+  .linksventas:hover {
     color: #000000;
-    background-color:#FDC128 ;
-    font-size: 26px;
+    background-color: #FDC128;
+    font-size: 2.6vw;
     transition: all 300ms ease;
-}
-.container__article{
-    max-width: 1200px;
+  }
+  
+  .container__article {
+    max-width: 90%;
     padding: 0px 20px;
     margin: auto;
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
-}
-
-.container__article .box__article{
-    width: auto;
+  }
+  
+  .container__article .box__article {
+    width: 30%;
     height: 95px;
     background: #ffffff;
     margin: 20px;
     border-radius: 20px;
-    
-}
-.letra{
+  }
+  
+  .letra {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
+    font-size: 1.8vw;
     text-align: center;
     color: #000000;
-}
+  }
+  
 /*FORMULARIO*/
 .containerform{
     position: relative;
